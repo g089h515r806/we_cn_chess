@@ -1,0 +1,11 @@
+{
+  "pages":[
+    "pages/chessplayer/chessplayer"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "亚艾元象棋",
+    "navigationBarTextStyle":"black"
+  }
+}

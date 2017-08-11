@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="container">
+<!-- canvas.wxml -->
+<canvas style="width: 360px; height: 400px;" canvas-id="qipuCanvas"></canvas>
+<!-- 当使用绝对定位时，文档流后边的 canvas 的显示层级高于前边的 canvas -->
+<view class="button-box">
+<button type="default" size="mini" plain="true" disabled="true" class="qipu-button" hover-class="qipu-button-hover">{{current_step}}/{{total_steps}}</button>
+
+<button type="default" size="mini" plain="true" bindtap="gotoPrevious" class="qipu-button" hover-class="qipu-button-hover"> 后退 </button>
+<button type="default" size="mini" plain="true" bindtap="gotoNext" class="qipu-button" hover-class="qipu-button-hover"> 前进 </button>
+</view>
+
+<view class="button-box">
+<button type="default" size="mini" plain="true" bindtap="gotoInit" class="qipu-button" hover-class="qipu-button-hover"> 初始 </button>
+<button type="default" size="mini" plain="true" bindtap="gotoEnd" class="qipu-button" hover-class="qipu-button-hover"> 终局 </button>
+<button type="default" size="mini" plain="true" bindtap="autoPlay" class="qipu-button" hover-class="qipu-button-hover"> {{auto_play_text}} </button>
+</view>
+<text>{{qipu.title}}</text>
+<text>{{qipu.event}}</text>
+</view>

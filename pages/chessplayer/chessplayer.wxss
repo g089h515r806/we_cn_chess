@@ -1,0 +1,18 @@
+/**index.wxss**/
+.button-box{
+  display: flex;
+  width:100%;
+   
+
+
+}
+.qipu-button {
+  flex: 1;
+  justify-content: space-between;
+  margin:5px;
+}
+
+button[type="default"][plain][disabled] {
+color:black;
+border-color:black;
+}
